@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- DATOS DE LA CUENTA ACTUAL -->
+    <item android:title="@string/my_acount">
+        <menu>
+            <item
+                android:id="@+id/menuHome"
+                android:icon="@drawable/ic_casa_color"
+                android:title="@string/menuHome" />
+        </menu>
+
+    </item>
+
+    <item android:title="@string/perfil">
+        <menu>
+            <item
+                android:id="@+id/perfil"
+                android:icon="@drawable/ic_profile"
+                android:title="@string/mi_Perfil" />
+
+            <item
+                android:id="@+id/mascota"
+                android:icon="@drawable/ic_mascota"
+                android:title="@string/mascota" />
+
+            <item
+                android:id="@+id/citas"
+                android:icon="@drawable/ic_calendar_date"
+                android:title="@string/citas" />
+
+            <item
+                android:id="@+id/carritoCompras"
+                android:icon="@drawable/ic_carrito_de_compra"
+                android:title="@string/carritocompra" />
+
+            <item
+                android:id="@+id/contactenos"
+                android:icon="@drawable/ic_whatsapp"
+                android:title="@string/contactenos" />
+        </menu>
+    </item>
+
+    <!-- VISIBLE PARA EL ADMINISTRADOR -->
+    <item
+        android:id="@+id/admin"
+        android:title="@string/admin">
+        <menu>
+            <item
+                android:id="@+id/producto_crud"
+                android:icon="@drawable/ic_producto"
+                android:title="@string/producto_CRUD" />
+            <item
+                android:id="@+id/usuario_crud"
+                android:icon="@drawable/ic_user_crud"
+                android:title="@string/perfil_CRUD" />
+            <item
+                android:id="@+id/mascota_crud"
+                android:icon="@drawable/ic_pet_crud"
+                android:title="@string/mascota_CRUD" />
+        </menu>
+    </item>
+
+    <!-- DATOS DE LA EMPRESA -->
+    <item android:title="@string/clinica_vet_rondon">
+        <menu>
+            <item
+                android:id="@+id/quienesSomos"
+                android:icon="@drawable/ic_about_us"
+                android:title="@string/quienessomos" />
+
+            <item
+                android:id="@+id/servicios"
+                android:icon="@drawable/ic_services"
+                android:title="@string/servicios" />
+            <item
+                android:id="@+id/especialidades"
+                android:icon="@drawable/ic_medical_specialties"
+                android:title="@string/especialidades" />
+
+
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.EspecialidadesFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:id="@+id/title_especialidades01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingStart="25dp"
+                android:text="@string/nuestras_especialidad"
+                android:textColor="@color/blue_text_Color"
+                android:textSize="30sp"
+                android:textStyle="bold|italic" />
+
+        </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+
+
+            <RelativeLayout
+                android:id="@+id/onco_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/round_bk3">
+
+                <ImageView
+                    android:id="@+id/img_onco"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:paddingStart="30dp"
+                    android:src="@drawable/espe_oncologia" />
+                <TextView
+                    android:id="@+id/oncologia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/oncologia_dr"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toEndOf="@+id/img_onco"
+                    android:text="@string/oncologia"
+                    android:textColor="@color/white_text_Color"
+                    android:textSize="30sp"
+                    android:textStyle="bold|italic" />
+                <TextView
+                    android:id="@+id/oncologia_dr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_toEndOf="@+id/img_onco"
+                    android:gravity="center_vertical"
+                    android:text="@string/oncologia_dr"
+                    android:textColor="@color/white_text_Color"
+                    android:textSize="15sp"
+                    android:textStyle="bold|italic" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fisioterapia_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/round_bk3">
+
+                <ImageView
+                    android:id="@+id/img_fisioterapia"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:paddingStart="30dp"
+                    android:src="@drawable/espe_fisioterapia" />
+                <TextView
+                    android:id="@+id/fisioterapia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/fisioterapia_dr"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toEndOf="@+id/img_fisioterapia"
+                    android:text="@string/fisioterapia"
+                    android:textColor="@color/white_text_Color"
+                    android:textSize="30sp"
+                    android:textStyle="bold|italic" />
+                <TextView
+                    android:id="@+id/fisioterapia_dr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_toEndOf="@+id/img_fisioterapia"
+                    android:gravity="center_vertical"
+                    android:text="@string/fisioterapia_dr"
+                    android:textColor="@color/white_text_Color"
+                    android:textSize="15sp"
+                    android:textStyle="bold|italic" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/traumatologia_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/round_bk3">
+
+                <ImageView
+                    android:id="@+id/img_traumatologia"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:paddingStart="30dp"
+                    android:src="@drawable/espe_traumatologia" />
+
+                <TextView
+                    android:id="@+id/traumatologia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/traumatologia_dr"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toEndOf="@+id/img_traumatologia"
+                    android:text="@string/traumatologia"
+                    android:textColor="@color/white_text_Color"
+                    android:textSize="30sp"
+                    android:textStyle="bold|italic" />
+                <TextView
+                    android:id="@+id/traumatologia_dr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_toEndOf="@+id/img_traumatologia"
+                    android:gravity="center_vertical"
+                    android:text="@string/traumatologia_dr"
+                    android:textColor="@color/white_text_Color"
+                    android:textSize="15sp"
+                    android:textStyle="bold|italic" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/neurologia_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/round_bk3">
+
+                <ImageView
+                    android:id="@+id/img_neurologia"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:paddingStart="30dp"
+                    android:src="@drawable/espe_neurologia" />
+                <TextView
+                    android:id="@+id/neurologia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/neurologia_dr"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toEndOf="@+id/img_neurologia"
+                    android:text="@string/neurologia"
+                    android:textColor="@color/white_text_Color"
+                    android:textSize="30sp"
+                    android:textStyle="bold|italic" />
+                <TextView
+                    android:id="@+id/neurologia_dr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_toEndOf="@+id/img_neurologia"
+                    android:gravity="center_vertical"
+                    android:text="@string/neurologia_dr"
+                    android:textColor="@color/white_text_Color"
+                    android:textSize="15sp"
+                    android:textStyle="bold|italic" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/odontologia_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/round_bk3">
+
+                <ImageView
+                    android:id="@+id/img_odontologia"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:paddingStart="30dp"
+                    android:src="@drawable/espe_odontologia" />
+
+                <TextView
+                    android:id="@+id/odontologia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/odontologia_dr"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toEndOf="@+id/img_odontologia"
+                    android:text="@string/odontologia"
+                    android:textColor="@color/white_text_Color"
+                    android:textSize="30sp"
+                    android:textStyle="bold|italic" />
+                <TextView
+                    android:id="@+id/odontologia_dr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_toEndOf="@+id/img_odontologia"
+                    android:gravity="center_vertical"
+                    android:text="@string/odontologia_dr"
+                    android:textColor="@color/white_text_Color"
+                    android:textSize="15sp"
+                    android:textStyle="bold|italic" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/oftalmologia_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/round_bk3">
+
+                <ImageView
+                    android:id="@+id/img_oftalmologia"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:paddingStart="20dp"
+                    android:src="@drawable/espe_oftalmologia" />
+                <TextView
+                    android:id="@+id/oftalmologia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/oftalmologia_dr"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toEndOf="@+id/img_oftalmologia"
+                    android:text="@string/oftalmologia"
+                    android:textColor="@color/white_text_Color"
+                    android:textSize="30sp"
+                    android:textStyle="bold|italic" />
+                <TextView
+                    android:id="@+id/oftalmologia_dr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_toEndOf="@+id/img_oftalmologia"
+                    android:gravity="center_vertical"
+                    android:text="@string/oftalmologia_dr"
+                    android:textColor="@color/white_text_Color"
+                    android:textSize="15sp"
+                    android:textStyle="bold|italic" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/felinos_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/round_bk3">
+
+                <ImageView
+                    android:id="@+id/img_felinos"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:paddingStart="30dp"
+                    android:src="@drawable/ic_cat" />
+                <TextView
+                    android:id="@+id/felinos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/felinos_dr"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toEndOf="@+id/img_felinos"
+                    android:text="@string/felinos"
+                    android:textColor="@color/white_text_Color"
+                    android:textSize="30sp"
+                    android:textStyle="bold|italic" />
+                <TextView
+                    android:id="@+id/felinos_dr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_toEndOf="@+id/img_felinos"
+                    android:gravity="center_vertical"
+                    android:text="@string/felinos_dr"
+                    android:textColor="@color/white_text_Color"
+                    android:textSize="15sp"
+                    android:textStyle="bold|italic" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/cardiologia_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/round_bk3">
+
+                <ImageView
+                    android:id="@+id/img_cardiologia"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:paddingStart="30dp"
+                    android:src="@drawable/espe_cardiologia" />
+                <TextView
+                    android:id="@+id/cardiologia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/cardiologia_dr"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toEndOf="@+id/img_cardiologia"
+                    android:text="@string/cardiologia"
+                    android:textColor="@color/white_text_Color"
+                    android:textSize="30sp"
+                    android:textStyle="bold|italic" />
+                <TextView
+                    android:id="@+id/cardiologia_dr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_toEndOf="@+id/img_cardiologia"
+                    android:gravity="center_vertical"
+                    android:text="@string/cardiologia_dr"
+                    android:textColor="@color/white_text_Color"
+                    android:textSize="15sp"
+                    android:textStyle="bold|italic" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/nutricion_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/round_bk3">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_nutricion"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:paddingStart="30dp"
+                    android:src="@drawable/espe_nutricion" />
+                <TextView
+                    android:id="@+id/nutricion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/nutricion_dr"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toEndOf="@+id/img_nutricion"
+                    android:text="@string/nutricion"
+                    android:textColor="@color/white_text_Color"
+                    android:textSize="30sp"
+                    android:textStyle="bold|italic" />
+                <TextView
+                    android:id="@+id/nutricion_dr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_toEndOf="@+id/img_nutricion"
+                    android:gravity="center_vertical"
+                    android:text="@string/nutricion_dr"
+                    android:textColor="@color/white_text_Color"
+                    android:textSize="15sp"
+                    android:textStyle="bold|italic" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    </LinearLayout>
+</FrameLayout>

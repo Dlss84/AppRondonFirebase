@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.savedstate:savedstate-ktx:1.2.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/4a9f5dbd607d74c7693ae5fa05255bd1/transformed/savedstate-ktx-1.2.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/4a9f5dbd607d74c7693ae5fa05255bd1/transformed/savedstate-ktx-1.2.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/4a9f5dbd607d74c7693ae5fa05255bd1/transformed/savedstate-ktx-1.2.0/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/../../../../Program Files/Android/gradle-7.0.2/caches/transforms-3/4a9f5dbd607d74c7693ae5fa05255bd1/transformed/savedstate-ktx-1.2.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../../../Program Files/Android/gradle-7.0.2/caches/transforms-3/4a9f5dbd607d74c7693ae5fa05255bd1/transformed/savedstate-ktx-1.2.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../../Program Files/Android/gradle-7.0.2/caches/transforms-3/4a9f5dbd607d74c7693ae5fa05255bd1/transformed/savedstate-ktx-1.2.0/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../../Program Files/Android/gradle-7.0.2/caches/modules-2/files-2.1/androidx.savedstate/savedstate-ktx/1.2.0/a066b62dbb6bf43c5980dc8035c2c7dd822d24dd/savedstate-ktx-1.2.0-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.savedstate/savedstate-ktx/1.2.0/a066b62dbb6bf43c5980dc8035c2c7dd822d24dd/savedstate-ktx-1.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

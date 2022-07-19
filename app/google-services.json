@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "784306845073",
+    "firebase_url": "https://approndonfirebase-2829d-default-rtdb.firebaseio.com",
+    "project_id": "approndonfirebase-2829d",
+    "storage_bucket": "approndonfirebase-2829d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:784306845073:android:083c1388ef8714c2201630",
+        "android_client_info": {
+          "package_name": "sebastiani.app_rondon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "784306845073-eo67nlr5ntc8fp4letkh432tn3cpivqg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbC4qruoPuGCD3jT4pCDP6xuu34P3j_wY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "784306845073-eo67nlr5ntc8fp4letkh432tn3cpivqg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

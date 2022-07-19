@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_frag"
+    app:startDestination="@id/menuHome">
+
+    <fragment
+        android:id="@+id/menuHome"
+        android:name="sebastiani.app_rondon.view.MenuHomeFragment"
+        android:label="@string/menuHome"
+        tools:layout="@layout/fragment_menu_home" />
+
+    <!-- PERFIL -->
+    <fragment
+        android:id="@+id/perfil"
+        android:name="sebastiani.app_rondon.view.PerfilFragment"
+        android:label="@string/perfil_usuario"
+        tools:layout="@layout/fragment_perfil" />
+    <fragment
+        android:id="@+id/mascota"
+        android:name="sebastiani.app_rondon.view.MascotaFragment"
+        android:label="@string/mi_mascota"
+        tools:layout="@layout/fragment_mascota" />
+    <fragment
+        android:id="@+id/citas"
+        android:name="sebastiani.app_rondon.view.CitasFragment"
+        android:label="@string/cita"
+        tools:layout="@layout/fragment_citas" />
+    <fragment
+        android:id="@+id/carritoCompras"
+        android:name="sebastiani.app_rondon.view.CarritoComprasFragment"
+        android:label="@string/carritocompra"
+        tools:layout="@layout/fragment_carrito_compras" />
+    <fragment
+        android:id="@+id/contactenos"
+        android:name="sebastiani.app_rondon.view.ContactenosFragment"
+        android:label="@string/contactenos"
+        tools:layout="@layout/fragment_contactenos" />
+
+    <!-- ADMINISTRADOR -->
+    <fragment
+        android:id="@+id/producto_crud"
+        android:name="sebastiani.app_rondon.view.ProductoCrudFragment"
+        android:label="@string/producto_CRUD"
+        tools:layout="@layout/fragment_producto_crud" />
+    <fragment
+        android:id="@+id/usuario_crud"
+        android:name="sebastiani.app_rondon.view.UsuarioCrudFragment"
+        android:label="@string/perfil_CRUD"
+        tools:layout="@layout/fragment_usuario_crud" />
+
+    <fragment
+        android:id="@+id/mascota_crud"
+        android:name="sebastiani.app_rondon.view.MascotaCrudFragment"
+        android:label="@string/mascota_CRUD"
+        tools:layout="@layout/fragment_mascota_crud" />
+
+
+    <!-- CLINICA VETERIANARIA RONDON -->
+    <fragment
+        android:id="@+id/quienesSomos"
+        android:name="sebastiani.app_rondon.view.QuienesSomosFragment"
+        android:label="@string/quienessomos"
+        tools:layout="@layout/fragment_quienes_somos" />
+    <fragment
+        android:id="@+id/servicios"
+        android:name="sebastiani.app_rondon.view.ServiciosFragment"
+        android:label="@string/servicios"
+        tools:layout="@layout/fragment_servicios" />
+    <fragment
+        android:id="@+id/especialidades"
+        android:name="sebastiani.app_rondon.view.EspecialidadesFragment"
+        android:label="@string/especialidades"
+        tools:layout="@layout/fragment_especialidades" />
+
+
+
+</navigation>
+

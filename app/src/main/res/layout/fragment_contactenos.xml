@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ContactenosFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:text="@string/cont_ctanos"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="@color/design_default_color_error"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/puedes_escribirnos_a_nuestro_whatsapp_con_alguna_inquietud_que_tengas_o_para_hacernos_llegar_tus_sugerencias"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black_text_Color"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/escribenos_a_nuestro_whatsapp"
+                android:backgroundTint="@android:color/holo_red_light"
+                android:textStyle="bold"
+                app:shapeAppearanceOverlay="@style/Button5"
+                />
+        </LinearLayout>
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/map_view"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            tools:ignore="SpeakableTextPresentCheck"
+            android:layout_gravity="center_horizontal">
+
+        </com.google.android.gms.maps.MapView>
+
+    </LinearLayout>
+
+</FrameLayout>

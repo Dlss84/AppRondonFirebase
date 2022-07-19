@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/fondo_02"
+    android:orientation="vertical"
+    tools:context=".Login.RegisterActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="15dp"
+        android:gravity="center"
+        android:text="@string/clinica_vet"
+        android:textColor="@color/blue_text_Color"
+        android:textSize="40sp"
+        android:textStyle="bold|italic|normal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:gravity="center"
+        android:text="@string/rondon"
+        android:textColor="@color/blue_text_Color"
+        android:textSize="40sp"
+        android:textStyle="bold|italic|normal" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- CARD VIEW-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="19dp"
+            app:cardCornerRadius="15dp"
+
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/btnPhotoUp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="24dp"
+                            android:layout_marginBottom="10dp"
+                            android:elevation="15dp"
+                            android:gravity="center"
+                            android:onClick="registrar"
+                            android:text="@string/registrar_cuenta"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white_text_Color"
+                            app:backgroundTint="@color/image_blue_Color"
+                            app:shapeAppearanceOverlay="@style/Button5"
+                            tools:ignore="OnClick" />
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:srcCompat="@tools:sample/avatars" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+                -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <!-- CABECERA REGISTRAR -->
+                    <TextView
+                        android:id="@+id/singUp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:text="@string/registrar_usuario"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue_text_Color"
+                        android:textSize="20sp"
+                        android:textStyle="bold|normal" />
+
+                </LinearLayout>
+
+                <!-- VISTA DE LOGIN -->
+
+                <!-- VISTA DE REGISTRAR  -->
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/singUpLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <!-- FORMULARIO DE REGISTRO-->
+                        <!-- NOMBRE -->
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/tilNombre"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:hint="@string/nombre"
+                            app:boxStrokeWidth="1dp"
+                            app:endIconMode="clear_text"
+                            app:shapeAppearanceOverlay="@style/Button4">
+
+                            <EditText
+                                android:id="@+id/etNombre"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:imeOptions="actionNext"
+                                android:inputType="textPersonName"
+                                android:nextFocusForward="@id/etApellido"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="normal" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <!-- APELLIDOS -->
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/tilApellido"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:hint="@string/apellidos"
+                            app:boxStrokeWidth="1dp"
+                            app:endIconMode="clear_text"
+                            app:shapeAppearanceOverlay="@style/Button4">
+
+                            <EditText
+                                android:id="@+id/etApellido"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:imeOptions="actionNext"
+                                android:inputType="textPersonName"
+                                android:nextFocusForward="@id/etCorreo"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="normal" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <!-- EMAIL -->
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/tilCorreo"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:hint="@string/username"
+                            app:boxStrokeWidth="1dp"
+                            app:endIconMode="clear_text"
+                            app:shapeAppearanceOverlay="@style/Button4">
+
+                            <EditText
+                                android:id="@+id/etCorreo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:imeOptions="actionNext"
+                                android:inputType="textEmailAddress"
+                                android:nextFocusForward="@id/etPassword"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="normal" />
+
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <!-- PASSWORD-->
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/tilPassword"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:hint="@string/password"
+                            app:boxStrokeWidth="1dp"
+                            app:endIconMode="password_toggle"
+                            app:shapeAppearanceOverlay="@style/Button4">
+
+                            <EditText
+                                android:id="@+id/etPassword"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:imeOptions="actionNext"
+                                android:inputType="textPassword"
+                                android:nextFocusForward="@id/tilDNI"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="normal" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <!-- PASSWORD CONFIRM-->
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/tilPasswordConfirm"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:hint="@string/repeat_password"
+                            app:boxStrokeWidth="1dp"
+                            app:endIconMode="password_toggle"
+                            app:shapeAppearanceOverlay="@style/Button4">
+
+                            <EditText
+                                android:id="@+id/etPasswordConfirm"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:imeOptions="actionNext"
+                                android:inputType="textPassword"
+                                android:nextFocusForward="@id/tilDNI"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="normal" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <!-- DNI -->
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/tilDNI"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="5dp"
+                                android:hint="@string/num_doc"
+
+                                app:boxStrokeWidth="1dp"
+                                app:endIconMode="clear_text"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/tilTelefono"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:shapeAppearanceOverlay="@style/Button4">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/etDNI"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="number"
+                                    android:nextFocusForward="@id/etTelefono"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:textStyle="normal" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <!-- TELÉFONO -->
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/tilTelefono"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+
+                                android:layout_marginRight="5dp"
+                                android:hint="@string/telefono"
+
+                                app:boxStrokeWidth="1dp"
+                                app:endIconMode="clear_text"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/tilDNI"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:shapeAppearanceOverlay="@style/Button4">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/etTelefono"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="phone"
+                                    android:nextFocusForward="@id/etDireccion"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:textStyle="normal" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                        <!-- DIRECCiÓN -->
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/tilDireccion"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:hint="@string/direccion"
+                            app:boxStrokeWidth="1dp"
+                            app:endIconMode="clear_text"
+                            app:shapeAppearanceOverlay="@style/Button4">
+
+                            <EditText
+                                android:id="@+id/etDireccion"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:imeOptions="actionNext"
+                                android:inputType="text"
+                                android:nextFocusForward="@id/tilDNI"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="normal" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <ProgressBar
+                            android:id="@+id/progressBar"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:indeterminate="true"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/btnRegistrar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="24dp"
+                            android:layout_marginBottom="10dp"
+                            android:elevation="15dp"
+                            android:gravity="center"
+                            android:onClick="registrar"
+                            android:text="@string/registrar_cuenta"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white_text_Color"
+                            app:backgroundTint="@color/image_blue_Color"
+                            app:shapeAppearanceOverlay="@style/Button5"
+                            tools:ignore="OnClick" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tvLoginHere01"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="30dp"
+                                android:gravity="center"
+                                android:paddingStart="30dp"
+                                android:text="@string/new_user_03"
+                                android:textColor="@color/black_text_Color"
+                                android:textSize="15sp"
+                                android:textStyle="bold|italic|normal"
+                                app:layout_constraintEnd_toStartOf="@+id/tvLoginHere02"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/tvLoginHere02"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="30dp"
+                                android:gravity="center"
+                                android:paddingStart="10dp"
+                                android:text="@string/new_user_04"
+                                android:textColor="@color/blue_text_Color"
+                                android:textSize="15sp"
+                                android:textStyle="bold|italic|normal"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/tvLoginHere01"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+
+                </ScrollView>
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+
+</LinearLayout>

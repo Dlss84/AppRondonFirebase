@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Intro.SplashScreen">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/logo_splashscreen"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:background="@drawable/user_avatar"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logito_dino"
+        app:civ_border_color="@color/moradoColor"
+        app:layout_constraintBottom_toTopOf="@+id/ClinicaTopTex"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@android:color/darker_gray"
+        app:strokeWidth="2dp"/>
+
+    <TextView
+        android:id="@+id/ClinicaTopTex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clinica"
+        android:textSize="42sp"
+        android:textColor="@color/moradoColor"
+        android:textStyle="italic"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="550dp"/>
+
+    <TextView
+        android:id="@+id/VeterinariaTopTex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/veterinaria"
+        android:textSize="38sp"
+        android:textColor="@color/moradoColor"
+        android:textStyle="italic"
+        app:layout_constraintTop_toBottomOf="@id/ClinicaTopTex"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/RondonTopTex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rondon"
+        android:textSize="38sp"
+        android:textColor="@color/moradoColor"
+        android:textStyle="italic"
+        app:layout_constraintTop_toBottomOf="@id/VeterinariaTopTex"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="5dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

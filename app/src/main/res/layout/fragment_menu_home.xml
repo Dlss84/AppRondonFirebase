@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".view.MenuHomeFragment">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <com.denzcoskun.imageslider.ImageSlider
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            android:id="@+id/imageSlider"
+            app:iss_auto_cycle="true"
+            app:iss_delay="0"
+            app:iss_placeholder="@android:color/darker_gray"
+            app:iss_error_image="@android:color/darker_gray"
+            app:iss_corner_radius="5"
+            app:iss_selected_dot="@drawable/default_selected_dot"
+            app:iss_unselected_dot="@drawable/default_unselected_dot"
+            app:iss_period="1000"
+            tools:ignore="MissingConstraints"
+            android:layout_gravity="center_horizontal"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                        android:text="Si nos visitas encontraras"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="250dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/imagen1"
+                    />
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="250dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/imagen2"
+                    android:layout_marginTop="5dp"
+                    />
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="250dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/imagen3"
+                    android:layout_marginTop="5dp"
+                    />
+        </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.android.gms:play-services-tasks:18.0.1@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e8c4143da990dde22b07190c63fd1f50/transformed/play-services-tasks-18.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/42d679ed098837bc40135f1628a61990/transformed/play-services-tasks-18.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/42d679ed098837bc40135f1628a61990/transformed/play-services-tasks-18.0.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/42d679ed098837bc40135f1628a61990/transformed/play-services-tasks-18.0.1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../../Program Files/Android/gradle-7.0.2/caches/transforms-3/42d679ed098837bc40135f1628a61990/transformed/play-services-tasks-18.0.1/res" />
+      <root url="file://$PROJECT_DIR$/../../../../Program Files/Android/gradle-7.0.2/caches/transforms-3/42d679ed098837bc40135f1628a61990/transformed/play-services-tasks-18.0.1/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../../../../Program Files/Android/gradle-7.0.2/caches/transforms-3/42d679ed098837bc40135f1628a61990/transformed/play-services-tasks-18.0.1/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../../../Program Files/Android/gradle-7.0.2/caches/modules-2/files-2.1/com.google.android.gms/play-services-tasks/18.0.1/2e3c5d886f131c9c8ae2d93dcf32aa58dad438e3/play-services-tasks-18.0.1-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.gms/play-services-tasks/18.0.1/2e3c5d886f131c9c8ae2d93dcf32aa58dad438e3/play-services-tasks-18.0.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

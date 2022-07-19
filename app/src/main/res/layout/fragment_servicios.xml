@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ServiciosFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:id="@+id/title_especialidades01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/nuestras_servicios"
+                android:textColor="@color/blue_text_Color"
+                android:textSize="30sp"
+                android:textStyle="bold|italic" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/round_bk2">
+
+                    <ImageView
+                        android:id="@+id/imgConsultas"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/servicios_consultas"
+                        android:padding="6dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_consulta" />
+
+                    <TextView
+                        android:id="@+id/consultas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/consultas_dr"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_toEndOf="@+id/imgConsultas"
+                        android:text="@string/consultas_medicas"
+                        android:textColor="@color/blue_text_Color"
+                        android:textSize="15sp"
+                        android:textStyle="bold|italic" />
+
+                    <me.biubiubiu.justifytext.library.JustifyTextView
+                        android:id="@+id/consultas_dr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginRight="-1dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_toEndOf="@+id/imgConsultas"
+                        android:gravity="center_vertical"
+                        android:text="@string/consultas_especialidades"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp"
+                        android:textStyle="bold|italic" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/round_bk2">
+
+                    <ImageView
+                        android:id="@+id/imgPeluqueria"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/servicios_peluqueria"
+                        android:padding="6dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_peluqueria" />
+
+                    <TextView
+                        android:id="@+id/Peluqueria"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/Peluqueria_dr"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="19dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_toEndOf="@+id/imgPeluqueria"
+                        android:text="@string/peluquería_mascotas"
+                        android:textColor="@color/blue_text_Color"
+                        android:textSize="15sp"
+                        android:textStyle="bold|italic" />
+
+                    <me.biubiubiu.justifytext.library.JustifyTextView
+                        android:id="@+id/Peluqueria_dr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginRight="-1dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_toEndOf="@+id/imgPeluqueria"
+                        android:gravity="center_vertical"
+                        android:text="@string/peluqueria_especialidades"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp"
+                        android:textStyle="bold|italic" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/round_bk2">
+
+                    <ImageView
+                        android:id="@+id/imgInternamientos"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/servicios_internamientos"
+                        android:padding="6dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_internamientos" />
+
+                    <TextView
+                        android:id="@+id/Internamientos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/Internamientos_dr"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="21dp"
+                        android:layout_marginBottom="9dp"
+                        android:layout_toEndOf="@+id/imgInternamientos"
+                        android:text="@string/internamientos"
+                        android:textColor="@color/blue_text_Color"
+                        android:textSize="15sp"
+                        android:textStyle="bold|italic" />
+
+                    <me.biubiubiu.justifytext.library.JustifyTextView
+                        android:id="@+id/Internamientos_dr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginRight="-1dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_toEndOf="@+id/imgInternamientos"
+                        android:gravity="center_vertical"
+                        android:text="@string/internamientos_especialidades"
+                        android:textColor="@color/blue"
+                        android:textSize="10sp"
+                        android:textStyle="bold|italic" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/round_bk2">
+
+                    <ImageView
+                        android:id="@+id/imgPetShop"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/servicios_petshop"
+                        android:padding="6dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_tienda_petshop" />
+
+                    <TextView
+                        android:id="@+id/PetShop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/PetShop_dr"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="21dp"
+                        android:layout_marginBottom="14dp"
+                        android:layout_toEndOf="@+id/imgPetShop"
+                        android:text="@string/pet_Shop"
+                        android:textColor="@color/blue_text_Color"
+                        android:textSize="15sp"
+                        android:textStyle="bold|italic" />
+
+                    <me.biubiubiu.justifytext.library.JustifyTextView
+                        android:id="@+id/PetShop_dr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginRight="24dp"
+                        android:layout_marginBottom="19dp"
+                        android:layout_toEndOf="@+id/imgPetShop"
+                        android:gravity="center_vertical"
+                        android:text="@string/petshop_especialidades"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp"
+                        android:textStyle="bold|italic" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/round_bk2">
+
+                    <ImageView
+                        android:id="@+id/imgCirugias"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/servicios_cirugias"
+                        android:padding="6dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_cirugias" />
+
+                    <TextView
+                        android:id="@+id/Cirugias"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/Cirugias_dr"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_toEndOf="@+id/imgCirugias"
+                        android:text="@string/cirugias"
+                        android:textColor="@color/blue_text_Color"
+                        android:textSize="15sp"
+                        android:textStyle="bold|italic" />
+
+                    <me.biubiubiu.justifytext.library.JustifyTextView
+                        android:id="@+id/Cirugias_dr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginRight="24dp"
+                        android:layout_marginBottom="19dp"
+                        android:layout_toEndOf="@+id/imgCirugias"
+                        android:gravity="center_vertical"
+                        android:text="@string/cirugia_especialidades"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp"
+                        android:textStyle="bold|italic" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/round_bk2">
+
+                    <ImageView
+                        android:id="@+id/imgLaboratorio"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/servicios_laboratorio"
+                        android:padding="6dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_laboratorio" />
+
+                    <TextView
+                        android:id="@+id/Laboratorio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/Laboratorio_dr"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_toEndOf="@+id/imgLaboratorio"
+                        android:text="@string/laboratorio"
+                        android:textColor="@color/blue_text_Color"
+                        android:textSize="15sp"
+                        android:textStyle="bold|italic" />
+
+                    <me.biubiubiu.justifytext.library.JustifyTextView
+                        android:id="@+id/Laboratorio_dr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginRight="24dp"
+                        android:layout_marginBottom="19dp"
+                        android:layout_toEndOf="@+id/imgLaboratorio"
+                        android:gravity="center_vertical"
+                        android:text="@string/laboratorio_especialidades"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp"
+                        android:textStyle="bold|italic" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</FrameLayout>
